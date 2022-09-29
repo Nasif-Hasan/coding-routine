@@ -1,0 +1,12 @@
+.site-name {
+    background-color:darkcyan;
+    color: white;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.header-icon {
+    font-size: 40px;
+}

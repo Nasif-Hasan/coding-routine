@@ -1,0 +1,21 @@
+.break-box {
+    background-color: darkcyan;
+    margin: 10px;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.break-btn-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.break-btn {
+    padding: 9px 15px;
+    font-weight: 600;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+}

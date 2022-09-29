@@ -1,0 +1,24 @@
+
+.programs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Tablet device */
+@media only screen and (max-width: 900px) {
+    .programs-container {
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+}
+
+/* Mobile device */
+@media only screen and (max-width: 600px) {
+    .programs-container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+
+    }
+}
