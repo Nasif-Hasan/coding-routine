@@ -23,7 +23,7 @@ const SoloProgram = ({program, cart, setCart}) => {
         <div className='course-card'>
             <img className='card-img' src={picture} alt="" />
             <h2>{name}</h2>
-            <h3>Time {time}</h3>
+            <h3>Time: {time} Minutes</h3>
             <button onClick={handleAddToCart} className='add-btn'>Add To Cart</button>
             
         </div>
