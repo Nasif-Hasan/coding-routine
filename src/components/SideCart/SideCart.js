@@ -57,8 +57,6 @@ const SideCart = ({ cart, study }) => {
 
             <div>
                 <BreakBox
-                    space={space}
-                    setSpace={setSpace}
                     spaceTime={spaceTime}
                 ></BreakBox>
             </div>

@@ -1,10 +1,7 @@
 import React from 'react';
 import './BreakBox.css'
 
-const BreakBox = ({space, setSpace, spaceTime}) => {
-    
-    
-    // console.log(space);
+const BreakBox = ({spaceTime}) => {
 
     return (
         <div>
