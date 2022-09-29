@@ -4,7 +4,7 @@ import './BreakBox.css'
 const BreakBox = ({space, setSpace}) => {
     
     const handleAddToSpace = () => {
-        setSpace(handleAddToSpace)
+        console.log(handleAddToSpace);
     }
     console.log(space);
 

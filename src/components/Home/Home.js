@@ -10,7 +10,6 @@ const Home = () => {
     const [programs, setPrograms] = useState([])
     
     const [cart, setCart] = useState([])
-
     
     useEffect(() => {
         fetch('data.json')
@@ -21,8 +20,8 @@ const Home = () => {
 
     return (
         <div className='home-container'>
-            <div>
-            <h1 className='top-text'>All Things For Learning Coding</h1>
+            <div className='work-part'>
+            <h1 className='top-text'>All Things For Learn Coding</h1>
                 <Programs
                     programs={programs}
                     cart={cart}

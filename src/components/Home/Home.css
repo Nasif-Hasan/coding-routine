@@ -12,10 +12,15 @@
     }
 }
 
+.work-part {
+    display: grid;
+    justify-content: center;
+}
+
 .top-text {
     color: darkcyan;
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .side-cart {
