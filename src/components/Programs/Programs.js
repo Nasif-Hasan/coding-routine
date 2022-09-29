@@ -2,8 +2,8 @@ import React from 'react';
 import SoloProgram from '../SoloProgram/SoloProgram';
 import './Programs.css'
 
-const Programs = ({programs, cart, setCart, addToStudyTime}) => {
-    // console.log(programs);
+const Programs = ({programs, addToStudyTime}) => {
+
 
     return (
         

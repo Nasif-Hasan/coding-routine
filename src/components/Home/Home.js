@@ -39,7 +39,6 @@ const Home = () => {
                     setCart={setCart}
                     study={study}
                 ></SideCart>
-
             </div>
         </div>
     );
