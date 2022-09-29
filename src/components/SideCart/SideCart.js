@@ -8,11 +8,15 @@ import BreakBox from '../BreakBox/BreakBox';
 
 const SideCart = ({ cart, setCart }) => {
 
+    
     let totalTime = 0;
     for (const spend of cart) {
-        totalTime = totalTime + spend.time
+
+        totalTime = (totalTime + spend.time)
     }
-    // console.log(cart);
+
+    console.log(totalTime);
+
     const [space, setSpace] = useState(0)
     const spaceTime = (space) => {
         setSpace(space)
@@ -22,7 +26,7 @@ const SideCart = ({ cart, setCart }) => {
     useEffect(() => {
         const storageValue = localStorage.getItem('Space-Time')
         setSpace(storageValue)
-    })
+    }, [])
 
 
     const notify = () => toast("Wow You Have Completed All Tasks...!");
@@ -65,7 +69,7 @@ const SideCart = ({ cart, setCart }) => {
 
                 <div className='info-box'>
                     
-                    <h4>Total Time: {totalTime} m</h4>
+                    <h4>Total Time: {totalTime ? totalTime : 0} Minutes</h4>
                 </div>
 
                 <div className='info-box'>

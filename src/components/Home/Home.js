@@ -10,6 +10,8 @@ const Home = () => {
     const [programs, setPrograms] = useState([])
     
     const [cart, setCart] = useState([])
+
+    // console.log(typeof(cart));
     
     useEffect(() => {
         fetch('data.json')
@@ -17,6 +19,7 @@ const Home = () => {
             .then(data => setPrograms(data))
     }, [])
 
+    
 
 
     return (
