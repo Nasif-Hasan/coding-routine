@@ -8,8 +8,10 @@ import BreakBox from '../BreakBox/BreakBox';
 
 const SideCart = ({cart, setCart}) => {
 
+    // console.log(cart);
     const [space, setSpace] = useState([])
-    const notify = () => toast("Wow so easy!");
+
+    const notify = () => toast("Wow You Have Completed All Tasks...!");
 
     return (
         <div>

@@ -18,6 +18,7 @@ const Home = () => {
     }, [])
 
 
+
     return (
         <div className='home-container'>
             <div className='work-part'>
@@ -26,6 +27,7 @@ const Home = () => {
                     programs={programs}
                     cart={cart}
                     setCart={setCart}
+
                 ></Programs>
             </div>
             <div className='side-cart'>

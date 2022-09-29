@@ -6,7 +6,7 @@ const BreakBox = ({space, setSpace}) => {
     const handleAddToSpace = () => {
         console.log(handleAddToSpace);
     }
-    console.log(space);
+    // console.log(space);
 
     return (
         <div>

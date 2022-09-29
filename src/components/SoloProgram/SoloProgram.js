@@ -16,7 +16,8 @@ const SoloProgram = ({program, cart, setCart}) => {
         const newTask = [todo]
         setCart(newTask)
     }
-    // console.log(cart);
+
+    // console.log(cart[0].time);
 
     return (
         <div className='course-card'>
