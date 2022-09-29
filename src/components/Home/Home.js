@@ -4,6 +4,8 @@ import './Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import BreakBox from '../BreakBox/BreakBox';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
 
@@ -11,6 +13,8 @@ const Home = () => {
     const [space, setSpace] = useState([])
 
     const [cart, setCart] = useState([])
+
+    const notify = () => toast("Wow so easy!");
     
     useEffect(() => {
         fetch('data.json')
@@ -76,9 +80,10 @@ const Home = () => {
                 </div>
 
                 <div>
-                    <button className='btn-activity'>
+                    <button onClick={notify} className='btn-activity'>
                         <h3>Coding Activity</h3>
                     </button>
+                    <ToastContainer />
                 </div>
 
             </div>
