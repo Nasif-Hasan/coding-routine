@@ -2,7 +2,7 @@ import React from 'react';
 import SoloProgram from '../SoloProgram/SoloProgram';
 import './Programs.css'
 
-const Programs = ({programs, cart, setCart}) => {
+const Programs = ({programs, cart, setCart, addToStudyTime}) => {
     // console.log(programs);
 
     return (
@@ -13,8 +13,7 @@ const Programs = ({programs, cart, setCart}) => {
                     <SoloProgram 
                     program={p}
                     key={p.id}
-                    cart={cart}
-                    setCart={setCart}
+                    addToStudyTime={addToStudyTime}
                     ></SoloProgram>
                 ))
             }

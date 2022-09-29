@@ -11,7 +11,11 @@ const Home = () => {
     
     const [cart, setCart] = useState([])
 
-    // console.log(typeof(cart));
+    const [study, setStudy] = useState(0)
+    const addToStudyTime = (duration) => {
+        setStudy(duration + study)
+        console.log(study);
+    }
     
     useEffect(() => {
         fetch('data.json')
@@ -30,13 +34,14 @@ const Home = () => {
                     programs={programs}
                     cart={cart}
                     setCart={setCart}
-
+                    addToStudyTime={addToStudyTime}
                 ></Programs>
             </div>
             <div className='side-cart'>
                 <SideCart
                     cart={cart}
                     setCart={setCart}
+                    study={study}
                 ></SideCart>
 
             </div>
