@@ -14,7 +14,6 @@ const Home = () => {
     const [study, setStudy] = useState(0)
     const addToStudyTime = (duration) => {
         setStudy(duration + study)
-        console.log(study);
     }
     
     useEffect(() => {
@@ -22,9 +21,6 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setPrograms(data))
     }, [])
-
-    
-
 
     return (
         <div className='home-container'>

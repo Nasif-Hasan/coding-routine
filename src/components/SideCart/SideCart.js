@@ -6,15 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import BreakBox from '../BreakBox/BreakBox';
 
-const SideCart = ({ cart, study }) => {
+const SideCart = ({ study }) => {
 
-    
-    let totalTime = 0;
-    for (const spend of cart) {
-
-        totalTime = (totalTime + spend.time)
-    }
-    console.log(totalTime);
 
     const [space, setSpace] = useState(0)
     const spaceTime = (space) => {
